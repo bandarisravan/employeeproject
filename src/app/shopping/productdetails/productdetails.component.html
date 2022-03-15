@@ -9,5 +9,5 @@
     <p>{{product.category}}</p>
     <p>{{product.rating|json}}</p>  
 </div>
-<button (click)="delete()">delete</button>
+<button (click)="delete()" (keyup)="delete()">delete</button>
 <button (click)="addcard()">addcard</button>

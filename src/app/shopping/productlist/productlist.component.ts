@@ -22,6 +22,10 @@ export class ProductlistComponent implements OnInit {
         alert("server down")
     )
    }
+   catch(value:any){
+     this.selectedproduct={};
+     this.products=this.products.filter((data:any)=>data.id!=value);
+   }
   
   
 
