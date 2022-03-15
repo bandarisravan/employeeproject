@@ -1,0 +1,16 @@
+.N{
+    color: red;
+}
+.M{
+    color: red;
+}
+.ab{
+    border: 2px solid red;
+}
+.sc{
+    border: 2px solid black;
+}
+.ll{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+
+.div1{
+    height: 100%;
+    background-color: rgb(44, 216, 159);
+    padding: 0%;
+}
+.div2{
+    height: 100%;
+    background-color: rgb(143, 77, 121);
+    padding: 0%;
+}
+.A{
+    height: 100%;
+    width: 100%;
+    
+}
+.B{
+    border: 2px solid black;
+}
+.row{
+    margin: 0%;
+}

@@ -1,0 +1,66 @@
+.parent{
+    height: 100vh;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color:black;
+    background-image:url("/assets/lord-ganesha.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+color: rgb(226, 9, 117);
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color:rgb(238, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+h4{
+    color: rgb(49, 170, 75);
+    text-align: center;
+}
+button{
+    background-color: darkgreen;
+    padding: 3px 15px;
+    
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    padding: 5px 10px;
+}
+h5{
+    color: darkgreen;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.N{
+    color: red;
+}
+.ab{
+    border: 2px solid red;
+}
+.sc{
+    border: 2px solid black;
+}

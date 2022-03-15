@@ -1,0 +1,12 @@
+<div>abc</div>
+<ng-container>def</ng-container>
+<ng-template #FE>
+    <p>sravan</p>
+    <p>sai</p>
+</ng-template>
+<ng-template #BE>
+    <p>view</p>
+    <p>ANGULAR</p>
+</ng-template>
+
+    <ng-container *ngTemplateOutlet="true?FE:BE"></ng-container>

@@ -1,0 +1,16 @@
+<div class="row A">
+    <div class="col-lg-6 div1">
+        <div class="row B" *ngFor="let product of products">
+            <div class="col-lg-6">
+                <img src="{{product.image}}" alt="image" width="100px">
+            </div>
+            <div class="col-lg-6">
+                <p>{{product.title}}</p>
+                <p>{{product.price}}</p>
+                <button (click)="view(product)">view</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 div2">
+    <app-productdetails [product]="selectedproduct"></app-productdetails>
+</div>

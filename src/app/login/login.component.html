@@ -1,0 +1,32 @@
+<div class="parent">
+    <div class="left">
+        <!-- <h1>WELCOME</h1> -->
+
+    </div>
+    <div class="right">
+        <form [formGroup]="login">
+            <table>
+                
+            <h1>ACCOUNT LOGIN</h1> 
+            
+            <input type="text" formControlName="email" placeholder="email" [ngClass]="login.get('email')?.invalid && login.get('email')?.touched? 'ab':'sc'">
+            <div class="N" *ngIf="login.get('email')?.invalid && login.get('email')?.touched">
+                <p *ngIf="login.get('email')?.errors?.['required']">required email</p>
+                <p *ngIf="login.get('email')?.errors?.['email']">invalid email</p>
+            </div>
+           
+            <input type="password" formControlName="password" placeholder="password" [ngClass]="login.get('email')?.invalid && login.get('email')?.touched? 'ab':'sc'">
+            <div class="N" *ngIf="login.get('password')?.invalid && login.get('password')?.touched">
+                <p *ngIf="login.get('password')?.errors?.['required']">required password</p>
+                <p *ngIf="login.get('password')?.errors?.['pattern']">Lowercase letters Uppercase letters  Numbers Special characters</p>
+            </div>
+        <br>
+            <h3><button (click)="SIGNIN()">SIGNIN</button></h3>
+            <h4>Forgot Username/Password</h4>
+            <h5>Sign up</h5>
+            </table>        
+        </form>
+        <br>
+    </div>  
+    
+</div>
